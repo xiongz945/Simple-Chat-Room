@@ -1,0 +1,27 @@
+<div class="nav">
+  <div class="container">
+    <div class="row">
+      <div class="col-10">
+        <h1 class="text-center">Welcome to the FSE Chat Room!</h1>
+      </div>
+      <div class="col">
+      <div class="nav-setting">
+          <div class="dropdown">
+              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Setting
+              </button>
+              <% if (user) { %>
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="/signout">Sign Out</a>
+              <% } else { %>
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="/signin">Sign In</a>
+                  <a class="dropdown-item" href="/signup">Sign Up</a>
+              <% } %>
+                </div>
+              </div>
+          </div>
+      </div>
+    </div>
+    </div>
+</div>
